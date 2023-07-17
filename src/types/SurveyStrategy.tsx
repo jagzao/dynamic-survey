@@ -1,4 +1,6 @@
+import type { SurveyData } from './SurveyData'
+
 export interface SurveyStrategy {
-  loadSurvey: () => void
+  loadSurvey: () => SurveyData
   displaySurvey: () => void
 }
